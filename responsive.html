@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<script>
+// JavaScript function to toggle section visibility
+function toggleSection(sectionId) {
+var sections = document.querySelectorAll('main section');
+sections.forEach(function(section) {
+section.style.display = 'none';
+});
+var selectedSection = document.getElementById(sectionId);
+selectedSection.style.display = 'block';
+}
+</script>
+</head>
+<body>
+<header>
+<h1>Sport Centre</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#" onclick="toggleSection('Home')">Home</a></li>
+
+<li><a href="#" onclick="toggleSection('Tennis')">Tennis</a></li>
+
+<li><a href="#" onclick="toggleSection('AFL')">AFL</a></li>
+
+<li><a href="#" onclick="toggleSection('Basketball')">Basketball</a></li>
+
+<li><a href="#" onclick="toggleSection('Netball')">Netball</a></li>
+
+<li><a href="#" onclick="toggleSection('Soccer')">Soccer</a></li>
+
+</ul>
+</nav>
+<main>
+    
+<section id="Home">
+<h2>Sports Centre</h2>
+<p>(Responsive Design Page) Information about the website would be laid out here..</p>
+</section>
+
+<section id="Tennis" style="display: none;">
+<h2>This is the Tennis page</h2>
+<p>(Responsive Design Page) Information about Tennis would be laid out here. </p>
+</section>
+
+<section id="AFL" style="display: none;">
+<h2>This is the AFL page</h2>
+<p>(Responsive Design Page) Information about AFL would be laid out here.</p>
+</section>
+
+<section id="Basketball" style="display: none;">
+<h2>This is the Basketball page</h2>
+<p>(Responsive Design Page) Information about AFL would be laid out here.</p>
+</section>
+
+<section id="Netball" style="display: none;">
+<h2>This is the Netball Page</h2>
+<p>(Responsive Design Page) Information about Netball would be laid out here.
+</p></section>
+
+<section id="Soccer" style="display: none;">
+<h2>This is the Soccer Pager</h2>
+<p>(Responsive Design Page) Information about Netball would be laid out here. </p>
+</section>
+
+</main>
+</body>
+</html>
